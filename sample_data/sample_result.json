@@ -1,0 +1,99 @@
+{
+  "source_files": ["demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf"],
+  "document_summary": "Redacted reimbursement sample containing invoice-like records, a bank-statement-style total, mixed currency evidence, and insufficient payment proof.",
+  "records": [
+    {
+      "source_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+      "page_or_item": "invoice item 1",
+      "document_type": "invoice",
+      "invoice_number": "UPWORK-INV-001",
+      "document_date": "2026-03-30",
+      "amount": 7.99,
+      "currency": "USD",
+      "seller_or_counterparty": "UPWORK",
+      "payment_reference": null,
+      "payment_proof_found": false,
+      "layout_summary": "Invoice-style row from cached redacted sample data.",
+      "uncertain_fields": [],
+      "warnings": ["USD invoice line requires cross-currency review."]
+    },
+    {
+      "source_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+      "page_or_item": "invoice item 2",
+      "document_type": "invoice",
+      "invoice_number": "UPWORK-INV-002",
+      "document_date": "2026-03-30",
+      "amount": 5.5,
+      "currency": "CNY",
+      "seller_or_counterparty": "UPWORK",
+      "payment_reference": null,
+      "payment_proof_found": false,
+      "layout_summary": "Invoice-style row from cached redacted sample data.",
+      "uncertain_fields": [],
+      "warnings": ["Payment proof missing or insufficient."]
+    },
+    {
+      "source_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+      "page_or_item": "invoice item 3",
+      "document_type": "invoice",
+      "invoice_number": "UPWORK-INV-003",
+      "document_date": "2026-03-31",
+      "amount": 98.82,
+      "currency": "CNY",
+      "seller_or_counterparty": "UPWORK",
+      "payment_reference": null,
+      "payment_proof_found": false,
+      "layout_summary": "Invoice-style row from cached redacted sample data.",
+      "uncertain_fields": [],
+      "warnings": ["Payment proof missing or insufficient."]
+    },
+    {
+      "source_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+      "page_or_item": "invoice item 4",
+      "document_type": "invoice",
+      "invoice_number": "UPWORK-INV-004",
+      "document_date": "2026-03-31",
+      "amount": 41.48,
+      "currency": "CNY",
+      "seller_or_counterparty": "UPWORK",
+      "payment_reference": null,
+      "payment_proof_found": false,
+      "layout_summary": "Invoice-style row from cached redacted sample data.",
+      "uncertain_fields": [],
+      "warnings": ["Payment proof missing or insufficient."]
+    },
+    {
+      "source_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+      "page_or_item": "summary statement",
+      "document_type": "bank_statement",
+      "invoice_number": null,
+      "document_date": null,
+      "amount": 1990.2,
+      "currency": "CNY",
+      "seller_or_counterparty": "PAYPAL_UPWORK",
+      "payment_reference": null,
+      "payment_proof_found": false,
+      "layout_summary": "Bank-statement-style total from cached redacted sample data.",
+      "uncertain_fields": ["payment_reference"],
+      "warnings": ["File name and statement-like total indicate CNY total but invoice evidence includes USD lines."]
+    }
+  ],
+  "detected_document_types": ["invoice", "bank_statement"],
+  "detected_currencies": ["USD", "CNY"],
+  "claimed_total_from_filename": 1990.2,
+  "claimed_currency_from_filename": null,
+  "extracted_totals_by_currency": {"CNY": 2136.0, "USD": 7.99},
+  "payment_proof_found": false,
+  "layout_observations": [
+    "The sample contains invoice-style rows and a separate summary/statement-style item.",
+    "Currency evidence is mixed across extracted records.",
+    "No reliable visual payment confirmation is present in the cached sample."
+  ],
+  "uncertain_fields": ["payment_reference", "exchange_rate_basis"],
+  "warnings": [
+    "Payment proof is missing or insufficient.",
+    "Cross-currency review is required.",
+    "The filename total must not be treated as approval evidence."
+  ],
+  "recommended_review_action": "human_review"
+}

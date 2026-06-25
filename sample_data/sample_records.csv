@@ -1,0 +1,6 @@
+Source file,Document type,Invoice number,Date,Amount,Currency,Seller or counterparty,Payment proof,Warnings
+demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-001,2026-03-30,7.99,USD,UPWORK,no,USD invoice line requires cross-currency review.
+demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-002,2026-03-30,5.5,CNY,UPWORK,no,Payment proof missing or insufficient.
+demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-003,2026-03-31,98.82,CNY,UPWORK,no,Payment proof missing or insufficient.
+demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-004,2026-03-31,41.48,CNY,UPWORK,no,Payment proof missing or insufficient.
+demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,bank_statement,,,1990.2,CNY,PAYPAL_UPWORK,no,File name and statement-like total indicate CNY total but invoice evidence includes USD lines.
